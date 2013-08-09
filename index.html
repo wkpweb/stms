@@ -1,0 +1,23 @@
+$ mkdir /path/to/source-code
+$ cd /path/to/repo
+$ git checkout -b gh-pages
+$ git clone https://github.com/wkpweb/stms.git
+$ cd stms
+$ ls
+README.md
+$ ls -a
+. .. .git README.md
+$ echo “Hello, world” > index.html
+$ git add index.html
+$ git commit index.html -m “My hello world commit”
+[gh-pages 48d71e6] My hello world commit
+1 files changed, 1 insertions(+), 0 deletions(-)
+create mode 100644 index.html
+$ git push origin gh-pages
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:username/projectName
+￼* [new branch] gh-pages -> gh-pages
